@@ -1,0 +1,67 @@
+# Lekly
+
+import java.util.Scanner;
+
+public class RPG{
+   public static void main(String[] args){
+
+      Scanner input=new Scanner(System.in);
+      int str=0, spd=0, def=0, luck=0;
+      int x, y;
+      String name=" ";
+
+      System.out.println("Welcome to my RPG\n");
+      System.out.println("Here are your options:\n   1. New\n   2. Load\n");
+      x=input.nextInt();
+
+      if(x==1){
+         str=1;
+         spd=1;
+         def=1;
+         luck=1;
+
+         System.out.print("Please enter your name> ");
+         name=input.next();
+         System.out.println();
+      }
+      else if(x==2){
+         System.out.println("Feature not supported");
+         System.exit(0);
+      }
+      else{
+         System.exit(0);
+      }
+      System.out.println(name+"'s Stats:");
+      System.out.println("   Strength: "+str+"\n   Defense: "+def);
+      System.out.println("   Speed: "+spd+"\n   Luck: "+luck);
+
+      System.out.println("\nMenu\n   1. Adventure\n   2. Stats");
+      System.out.println("   3. Skills\n   4. Save\n   5. Quit");
+      y=input.nextInt();
+
+      if(y==1){
+         System.out.println("Feature not supported");
+         System.exit(0);
+      }
+      else if(y==2){
+         System.out.println(name+"'s Stats:");
+         System.out.println("   Strength: "+str+"\n   Defense: "+def);
+         System.out.println("   Speed: "+spd+"\n   Luck: "+luck);
+      }
+      else if(y==3){
+         System.out.println("Feature not supported");
+         System.exit(0);
+      }
+      else if(y==4){
+         System.out.println("Feature not supported");
+         System.exit(0);
+      }
+      else if(y==5){
+         System.out.println("Thanks for playing!");
+         System.exit(0);
+      }
+      else{
+         System.exit(0);
+      }
+   }
+}
